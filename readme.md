@@ -12,6 +12,6 @@
 
 2. Memo (src/components/Memo/Memo.ts) : Memo 카드 내부의 데이터와 동작을 캡슐화하여 관리 <br>
 
-- Memo 컴포넌트의 내부 데이터를 관리하는데 로직을 집중하고 화면을 갱신하는 작업은 this.render() 메서드를 통하여 view 를 갱신하는 과정을 간략화하였다.
+Memo 컴포넌트의 내부 데이터를 관리하는데 로직을 집중하고 화면을 갱신하는 작업은 this.render() 메서드를 통하여 view 를 갱신하는 과정을 간략화하였다.<br>
 
-- constructor > render > mount > didmount > destory 생명주기를 가진다.
+constructor > render > mount > didmount > destory 생명주기를 가진다.<br>
