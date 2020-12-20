@@ -9,10 +9,16 @@ module.exports = {
     main: './src/index.ts',
   },
   resolve: {
-    extensions: ['.js', '.ts', 'json'],
+    extensions: ['.js', '.ts', 'json', 'html'],
   },
   module: {
-    rules: [],
+    rules: [
+      { test: /\.(js|mjs|ts)?$/, loader: 'babel-loader' },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+    ],
   },
   plugins: [
     new CaseSensitivePath(),
